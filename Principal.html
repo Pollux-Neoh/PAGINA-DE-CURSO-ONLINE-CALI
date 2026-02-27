@@ -1,174 +1,196 @@
 <!doctype html>
 <html lang="es">
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Curso Desarrollo Web</title>
-<style>
-body{
-    background: linear-gradient(to bottom,#e1ebf3,#2372da);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0;
-}
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Curso Desarrollo Web</title>
+      <style>
+        body {
+          background: linear-gradient(to bottom, #e1ebf3, #2372da);
+          font-family:
+            "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          margin: 0;
+        }
 
-/* el padding es para darle espacio al header */
-header{
-    background:#1e3a8a;
-    color:white;
-    padding:30px;
-    cursor:pointer;
-}
+        /* el padding es para darle espacio al header */
+        header {
+          background: #1e3a8a;
+          color: white;
+          padding: 30px;
+          cursor: pointer;
+        }
 
+        /* Cuando el mouse toca la zona del header cambia de color */
+        header:hover {
+          background: #2563eb;
+        }
+        /* las section son mis contenedores */
+        section {
+          background: white;
+          margin: 30px auto;
+          padding: 25px;
+          width: 80%;
+          border-radius: 12px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
 
-/* Cuando el mouse toca la zona del header cambia de color */
-header:hover{
-    background:#2563eb;   
-}
-/* las section son mis contenedores */
-section{
-    background:white;
-    margin:30px auto;
-    padding:25px;
-    width:80%;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
+        h2 {
+          color: #1e3a8a;
+        }
 
-h2{
-    color:#1e3a8a;
-}
+        h3 {
+          color: #2563eb;
+        }
+        /* propiedades de tabla */
+        table {
+          margin: auto;
+          border-collapse: collapse;
+          width: 80%;
+        }
 
-h3{
-    color:#2563eb;
-}
-/* propiedades de tabla */
-table{
-    margin:auto;
-    border-collapse: collapse;
-    width:80%;
-}
+        /* propiedades de las celdas */
+        th,
+        td {
+          border: 2px solid #3c3e41;
+          padding: 12px;
+        }
 
-/* propiedades de las celdas */
-th,td{
-    border:2px solid #3c3e41;
-    padding:12px;
-}
+        /* Me brinda el color de la tabla */
+        th {
+          background: #2563eb;
+          color: white;
+        }
 
-/* Me brinda el color de la tabla */
-th{
-    background:#2563eb;
-    color:white;
-}
+        img {
+          border-radius: 12px;
+          border: 4px solid #2563eb;
+        }
 
-img{
-    border-radius:12px;
-    border:4px solid #2563eb;
-}
+        /* propiedades de boton */
+        button {
+          background: #2563eb;
+          color: white;
+          padding: 15px 25px;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          cursor: pointer;
+        }
 
-/* propiedades de boton */
-button{
-    background:#2563eb;
-    color:white;
-    padding:15px 25px;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-}
+        button:hover {
+          background: #1e40af;
+        }
+      </style>
+    </head>
 
-button:hover{
-    background:#1e40af;
-}
-</style>
-</head>
+    <body>
+      <header>
+        <h1>Curso: Introducción al Desarrollo Web</h1>
+        <p>Aprende desde cero a crear páginas web profesionales</p>
+      </header>
 
-<body>
+      <section>
+        <h2>¿Qué es este curso?</h2>
 
-<header>
-<h1>Curso: Introducción al Desarrollo Web</h1>
-<p>Aprende desde cero a crear páginas web profesionales</p>
+        <p>
+          Este curso enseña los fundamentos del desarrollo web usando HTML para
+          crear páginas modernas y funcionales desde cero.
+        </p>
 
-</header>
+        <h2>¿A quién va dirigido?</h2>
+        <p>
+          Ideal para principiantes, estudiantes o personas que desean iniciar en
+          programación y tecnología.
+        </p>
 
-<section>
-  
-<h2>¿Qué es este curso?</h2>
+        <h2>¿Qué aprenderás?</h2>
+        <p>
+          Aprenderás estructura HTML, uso de etiquetas, multimedia, tablas,
+          listas y estilos internos para diseñar páginas web.
+        </p>
+        <a href="#ubicacion">
+          <button>Ir a Ubicación</button>
+        </a>
+      </section>
 
-<p>Este curso enseña los fundamentos del desarrollo web usando HTML para crear páginas modernas y funcionales desde cero.</p>
+      <section>
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Contenido paso a paso</li>
+          <li>Proyectos prácticos</li>
+          <li>Acceso de por vida</li>
+          <li>Certificado final</li>
+        </ul>
 
-<h2>¿A quién va dirigido?</h2>
-<p>Ideal para principiantes, estudiantes o personas que desean iniciar en programación y tecnología.</p>
+        <h3>Inscripción</h3>
+        <ol>
+          <li>Crear cuenta</li>
+          <li>Elegir curso</li>
+          <li>Realizar pago</li>
+          <li>Comenzar clases</li>
+        </ol>
+        <a href="#ubicacion">
+          <button>Ir a Ubicación</button>
+        </a>
+      </section>
 
-<h2>¿Qué aprenderás?</h2>
-<p>Aprenderás estructura HTML, uso de etiquetas, multimedia, tablas, listas y estilos internos para diseñar páginas web.</p>
-<a href="#ubicacion">
-    <button>Ir a Ubicación</button>
-</a>
-</section>
+      <section>
+        <h2>Detalles del Curso</h2>
+        <table>
+          <tr>
+            <th>Horario</th>
+            <th>Duración</th>
+            <th>Modalidad</th>
+            <th>Precio</th>
+          </tr>
+          <tr>
+            <td>Lunes a Viernes</td>
+            <td>4 semanas</td>
+            <td>Online</td>
+            <td>$49 USD</td>
+          </tr>
+        </table>
+      </section>
 
-<section>
-<h3>Beneficios</h3>
-<ul>
-<li>Contenido paso a paso</li>
-<li>Proyectos prácticos</li>
-<li>Acceso de por vida</li>
-<li>Certificado final</li>
-</ul>
+      <!-- Secciones de mi pagina, imagenes videos, mapas, Botones -->
+      <section>
+        <h2>Vista del Curso</h2>
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"
+          width="400"
+          alt="Programación"
+        />
+      </section>
 
-<h3>Inscripción</h3>
-<ol>
-<li>Crear cuenta</li>
-<li>Elegir curso</li>
-<li>Realizar pago</li>
-<li>Comenzar clases</li>
-</ol>
-<a href="#ubicacion">
-    <button>Ir a Ubicación</button>
-</a>
-</section>
+      <section>
+        <h2>Video introductorio</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MJkdaVFHrto?si=9SN5x0aTkGaLiBy-"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-<section>
-<h2>Detalles del Curso</h2>
-<table>
-<tr>
-<th>Horario</th>
-<th>Duración</th>
-<th>Modalidad</th>
-<th>Precio</th>
-</tr>
-<tr>
-<td>Lunes a Viernes</td>
-<td>4 semanas</td>
-<td>Online</td>
-<td>$49 USD</td>
-</tr>
-</table>
-</section>
+      <section>
+        <h2 id="ubicacion">Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7965.509528943947!2d-76.54130823541084!3d3.4098624158312463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6b14fd88b77%3A0xa7234cb721ecf466!2sZawadzky%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1772159965453!5m2!1ses-419!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
 
-
-<!-- Secciones de mi pagina, imagenes videos, mapas, Botones -->
-<section>
-<h2>Vista del Curso</h2>
-<img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" width="400" alt="Programación">
-</section>
-
-<section>
-<h2>Video introductorio</h2>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/MJkdaVFHrto?si=9SN5x0aTkGaLiBy-"
-frameborder="0" allowfullscreen></iframe>
-</section>
-
-<section>
-<h2 id="ubicacion">Ubicación</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7965.509528943947!2d-76.54130823541084!3d3.4098624158312463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6b14fd88b77%3A0xa7234cb721ecf466!2sZawadzky%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1772159965453!5m2!1ses-419!2sco"
- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<section>
-<h2>¡Inscríbete hoy!</h2>
-<button>Quiero aprender Desarrollo Web</button>
-</section>
-  
-</body>
+      <section>
+        <h2>¡Inscríbete hoy!</h2>
+        <button>Quiero aprender Desarrollo Web</button>
+      </section>
+    </body>
+  </html>
 </html>
