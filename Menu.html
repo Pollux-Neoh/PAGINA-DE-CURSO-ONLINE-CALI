@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        margin: 0;
+
+        background: linear-gradient(to bottom,
+                #0D0D0D 0%,
+                #0D0D0D 75%,
+                #0D0D0D 110%);
+    }
+
+    h1 {
+        font-family:
+            "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+    }
+
+    .caja {
+        background: transparent;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .caja:hover {
+        transform: scale(1.05);
+    }
+
+    h2 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin-top: 20px;
+        color: #000000;
+        text-align: center;
+        padding: 15%;
+    }
+
+    h5 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin-top: 20px;
+        color: #ffffff;
+        text-align: left;
+        padding: 15%;
+        font-size: 20px;
+    }
+
+
+
+    h3 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 25px;
+        color: #D9843B;
+        text-align: left;
+
+    }
+
+    h4 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin-top: 20px;
+        color: #ffffff;
+        text-align: center;
+        padding: 15%;
+        font-size: 20px;
+
+    }
+
+    h6 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        margin-top: -180px;
+        padding: 15%;
+    }
+
+
+
+
+    .list {
+        font-family:
+            "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .list a:hover {
+        color: #d9843b;
+    }
+
+    .subrayado {
+        text-decoration: underline;
+        text-underline-offset: -5px;
+        text-underline-position: under;
+        text-decoration-color: #d9843b;
+        text-decoration-thickness: 6px;
+        margin-top: 20px;
+    }
+
+    div {
+        font-family:
+            "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+        font-size: 60px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    table {
+        margin-left: 5%;
+        width: 100%;
+        background-color: #0D0D0D;
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 50%;
+        border: 2px solid #d9843b;
+
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    th,
+    td {
+        border: 5px solid #0D0D0D;
+        padding: 5px;
+    }
+
+    th {
+        background-color: hsl(0, 13%, 30%);
+        border-radius: 20px;
+        background-color: #4D736F;
+    }
+
+    td {
+        background-color: hsl(0, 13%, 30%);
+        border-radius: 20px;
+        background-color: #590202;
+    }
+
+    .contenedor {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 100px;
+        align-items: center;
+
+    }
+
+    .imagenes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagenes img {
+        margin-top: 165px;
+        width: 250px;
+        border-radius: 15px;
+        transition: .3s;
+    }
+
+    .imagenes img:hover {
+        transform: scale(1.05);
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: -100px;
+        
+    }
+    .bloque{
+    color:#D9843B;
+    text-align:center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.titulo{
+    display:block;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#D9843B;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#D9843B;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+</style>
+
+<body>
+    <header id="inicial">
+        <h1 class="subrayado">
+            <div class="caja">Sabor Del Mar</div>
+        </h1>
+    </header>
+
+    <nav>
+        <ul class="list">
+            <li><a href="Principal.html">Principal</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+
+
+        <table>
+
+            <tr>
+                <th>
+                    <h2>Menu</h2>
+                </th>
+                <th>
+                    <h2>Ingredientes</h2>
+                </th>
+                <th>
+                    <h2>Descripcion</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Camarones en Salsa</h3>
+                </td>
+                <td>
+                    <h5>Camarones, tomate, especias, pimienta.</h5>
+                </td>
+                <td>
+                    <h4>
+                        Un plato delicioso que te hara sentir como si estuvieras comiendo
+                        en un restaurante de al lado del mar.
+                    </h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Pescado Asado</h3>
+                </td>
+                <td>
+                    <h5>pescado, tomate, especias, lechuga.</h5>
+                </td>
+                <td>
+                    <h4>
+                        Un plato delicioso que te hara sentir como si estuvieras comiendo
+                        en un restaurante de al lado del mar.
+                    </h4>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Cazuela de Mariscos</h3>
+                </td>
+                <td>
+                    <h5>Mariscos, tomate, especias, pimienta.</h5>
+                </td>
+                <td>
+                    <h4>
+                        Un plato delicioso que te hara sentir como si estuvieras comiendo
+                        en un restaurante de al lado del mar.
+                    </h4>
+            </tr>
+
+
+        </table>
+
+        <div class="imagenes">
+            <img src="img/Camarones.jpg" alt="Camarones">
+            <img src="img/Pescado.jpg" alt="Pescado">
+            <img src="img/Cazuela.jpg" alt="Cazuela">
+
+
+        </div>
+
+    </main>
+
+    <footer id="contacto">
+
+        <div class="contacto">
+
+            <div class="bloque">
+                <span class="titulo">Teléfono</span>
+                <a href="tel:+573023352021">+57 302 335 2021</a>
+            </div>
+
+            <div class="bloque">
+                <span class="titulo">Dirección</span>
+                <p>Carrera 42 # 3 sur 81 Local 305</p>
+                <p>Distrito de Negocios Milla de Oro</p>
+                <p>Medellín, Colombia</p>
+            </div>
+                    <ul class="list">
+            <li><a href="Principal.html">Principal</a></li>
+            <li><a href="#inicial">Inicio</a></li>
+        </ul>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
